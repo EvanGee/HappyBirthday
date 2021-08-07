@@ -77,6 +77,12 @@
             if (particles.length < 500 && Math.random() < probability) {
                 createFirework();
             }
+          
+            ctx = canvas.getContext("2d");
+            ctx.fillStyle = "white";
+            ctx.textAlign = "center";
+            ctx.fillText("Hello World", canvas.width/2, canvas.height/2);
+          
             var alive = [];
             for (var i=0; i<particles.length; i++) {
                 if (particles[i].move()) {
