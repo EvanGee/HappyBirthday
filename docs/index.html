@@ -7,7 +7,6 @@
 <div>
   <canvas style="background:#000;"id="canvas">
 
-
     <div style="color:white;">
 
     <h1>Happy Birthday!!</h1>
@@ -26,6 +25,7 @@
       
  </canvas>  
     
+      
 </div>
 </body>
 <script language="JavaScript"> 
@@ -53,7 +53,10 @@
             canvas = document.getElementById("canvas");
             ctx = canvas.getContext("2d");
             resizeCanvas();
-            
+            ctx.fillStyle = "white";
+            ctx.textAlign = "center";
+            ctx.fillText("Hello World", canvas.width/2, canvas.height/2);
+          
             window.requestAnimationFrame(updateWorld);
         } 
         
